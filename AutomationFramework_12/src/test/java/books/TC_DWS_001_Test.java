@@ -18,6 +18,7 @@ public class TC_DWS_001_Test extends BaseClass {
 
 	@Test
 	public void clickOnBooks() throws EncryptedDocumentException, IOException {
+		//click on books opt
 		hp = new HomePgae(driver);
 		hp.getBooksLink().click();
 		Assert.assertEquals(driver.getTitle(), eUtil.getStringDataFromExcel("Books", 1, 0),
